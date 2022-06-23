@@ -1,5 +1,3 @@
-
-
 export function Logo() {
   return (
     <svg
@@ -21,3 +19,4 @@ export function Logo() {
     </svg>
   );
 }
+
