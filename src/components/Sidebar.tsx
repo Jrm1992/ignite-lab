@@ -1,5 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
 import { Lesson } from "./Lesson";
+import { Header } from "./Header";
 
 const GET_LESSONS_QUERY = gql`
   query {
@@ -27,7 +28,8 @@ export function Sidebar() {
   const { data } = useQuery<GetLessonsQueryResponse>(GET_LESSONS_QUERY);
 
   return (
-    <aside className="w-[348px] hidden sm:block bg-gray-700 p-6 border-l border-gray-600">
+  <div className="">
+    <aside className="w-[348px] sm:block bg-gray-700 p-6 border-l border-gray-600">
       <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
         Cronogramas das aulas
       </span>
@@ -46,5 +48,6 @@ export function Sidebar() {
         })}
       </div>
     </aside>
+  </div>
   );
 }
