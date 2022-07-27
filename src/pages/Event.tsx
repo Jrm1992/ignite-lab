@@ -31,7 +31,7 @@ export function Event() {
         <div className=
         {
           mode
-          ?"flex "
+          ?"flex ml-auto"
           :"hidden sm:block"
           }
         >
